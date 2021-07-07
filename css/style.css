@@ -1,0 +1,520 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 991px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 767px;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'PT Sans';
+  overflow-x: hidden;
+}
+
+.main-sec {
+  background: url(../images/bg.png) top center no-repeat;
+  padding-top: 20px;
+  padding-bottom: 190px;
+}
+
+.main-sec header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-sec header .contacts a {
+  display: block;
+  text-align: right;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.main-sec header .contacts a:hover {
+  color: #FF6868;
+}
+
+.main-sec header .contacts a:last-child {
+  margin-bottom: 0;
+}
+
+.main-sec h1 {
+  text-align: center;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 78px;
+  margin-top: 150px;
+}
+
+.main-sec .link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-sec .link-wrapper a {
+  width: 293px;
+  height: 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF6868;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.main-sec .link-wrapper a:hover {
+  background: #fc8282;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gets-list {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.gets-list .gets-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gets-list .gets-row .get-item {
+  max-width: 370px;
+  margin-top: 33px;
+  position: relative;
+  background: #FFF8F5;
+  padding: 15px;
+  padding-bottom: 100px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.gets-list .gets-row .get-item .item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gets-list .gets-row .get-item .item-header .title {
+  font-family: Montserrat;
+  font-size: 20px;
+  color: #4E4E4E;
+  font-weight: 700;
+}
+
+.gets-list .gets-row .get-item .item-header i {
+  display: block;
+  margin-right: 19px;
+}
+
+.gets-list .gets-row .get-item .item-header i svg {
+  display: block;
+  width: 94px;
+  fill: #fd0;
+  color: #646770;
+}
+
+.gets-list .gets-row .get-item p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+  font-family: Montserrat;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 23px;
+}
+
+.gets-list .gets-row .get-item .buy-wrapper {
+  text-align: center;
+  margin-top: 25px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+.gets-list .gets-row .get-item .buy-wrapper a {
+  display: inline-block;
+  font-weight: 700;
+  font-family: Montserrat;
+  width: 160px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 21px;
+  text-decoration: none;
+  border-radius: 22px;
+  background: #fd0;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.gets-list .gets-row .get-item .buy-wrapper a:hover {
+  background: #fcd582;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gets-list .more-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gets-list .more-wrapper a {
+  width: 233px;
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FF6868;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 21px;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.gets-list .more-wrapper a:hover {
+  background: #fc8282;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background: #404040;
+  padding-top: 48px;
+}
+
+footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer ul {
+  margin: 0;
+  padding-left: 0;
+  line-height: 35px;
+  text-align: right;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: PT Sans;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+footer ul li a:hover {
+  color: #FF6868;
+}
+
+footer .left-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .left-foot .contacts {
+  margin-left: 28px;
+  padding-top: 10px;
+}
+
+footer .left-foot .contacts div {
+  font-family: PT Sans;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+footer .left-foot .contacts div:last-child {
+  margin-bottom: 0;
+}
+
+footer .adres {
+  font-family: PT Sans;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+footer .politic {
+  border-top: 1px solid #DBDBDB;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 38px;
+}
+
+@media (max-width: 1199px) {
+  .gets-list .gets-row .get-item {
+    max-width: 10000px;
+    width: 48%;
+  }
+  .main-sec {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-sec h1 {
+    font-size: 40px;
+    line-height: 57px;
+  }
+  .main-sec .link-wrapper a {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .main-sec .link-wrapper {
+    margin-top: 50px;
+  }
+  .main-sec h1 {
+    margin-top: 100px;
+  }
+  .main-sec {
+    padding-bottom: 140px;
+  }
+  .gets-list {
+    padding-top: 30px;
+  }
+  footer .row {
+    display: block;
+  }
+  footer ul {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .gets-list .gets-row .get-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .gets-list .more-wrapper a {
+    width: 180px;
+    height: 60px;
+    font-size: 19px;
+  }
+  .gets-list {
+    padding-bottom: 60px;
+  }
+  .gets-list .more-wrapper {
+    margin-top: 60px;
+  }
+  .gets-list .gets-row .get-item .item-header i svg {
+    width: 50px;
+  }
+  .gets-list .gets-row .get-item .item-header .title {
+    font-size: 16px;
+  }
+  footer {
+    padding-top: 20px;
+  }
+  footer .logo svg {
+    width: 60px;
+  }
+  footer .left-foot .contacts div {
+    font-size: 15px;
+  }
+  footer .left-foot .contacts {
+    margin-left: 18px;
+    padding-top: 16px;
+  }
+  footer .left-foot .contacts div {
+    margin-bottom: 7px;
+  }
+  footer ul li a {
+    font-size: 16px;
+  }
+  footer .adres {
+    font-size: 13px;
+  }
+  footer .politic {
+    font-size: 16px;
+    margin-top: 27px;
+    padding-top: 20px;
+  }
+  .gets-list .gets-row .get-item .buy-wrapper a {
+    font-size: 18px;
+  }
+  .gets-list .more-wrapper a {
+    font-size: 17px;
+    height: 50px;
+  }
+  .main-sec header img {
+    width: 90px;
+  }
+  .main-sec header .contacts a {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .main-sec h1 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
